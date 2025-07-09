@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AutoDeal</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preload" as="image" href="images/caro/I4.png">
+  <link rel="preload" as="image" href="images/caro/I1.png">
+  <link rel="preload" as="image" href="images/caro/I3.png">
+  <link rel="preload" as="image" href="images/caro/I2.png">
+</head>
+<body>
+
+  <!-- ✅ Navbar -->
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="brand">
+        <img src="images/car.png" alt="AutoDeal Logo" class="logo" />
+        <h1>AutoDeal</h1>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#featured">Featured Cars</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+      <a href="#" class="auth-btn" id="auth-toggle">Login / Sign Up</a>
+    </div>
+  </header>
+
+  <!-- ✅ Hero Carousel -->
+  <section class="carousel">
+    <div class="carousel-images">
+      <img src="images/caro/I4.png" alt="Car 1">
+      <img src="images/caro/I1.png" alt="Car 2">
+      <img src="images/caro/I3.png" alt="Car 3">
+      <img src="images/caro/I2.png" alt="Car 4">
+    </div>
+    <div class="carousel-overlay">
+      <h1>Find Your Perfect</h1>
+      <h1><span>Pre-Owned Vehicle</span></h1>
+      <p>Quality cars, competitive prices, and exceptional service. Your trusted partner in finding the right car for you.</p>
+      <div class="carousel-buttons">
+        <a href="#" class="btn blue" id="browse-btn">Browse Inventory</a>
+        <a href="#" class="btn green" id="sell-car-btn">Sell Your Car</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ✅ Featured Cars Section -->
+  <main>
+    <section class="car-listings" id="featured">
+      <h2>Featured Cars</h2>
+      <div class="cars">
+        <!-- Example cards -->
+        <div class="car-card">
+          <img src="images/Merc/I4.png" alt="Car" />
+          <h3>2020 Mercedes-Benz C-Class</h3>
+          <p>Price: ₹28,50,000</p>
+          <p>Kilometers: 45,000 km</p>
+          <button 
+            class="view-details-btn" 
+            data-index="0"
+            data-source="featured"
+          >View Details</button>
+        </div>
+        <div class="car-card">
+          <img src="images/BMW/I4.png" alt="Car" />
+          <h3>2019 BMW X3 xDrive30i</h3>
+          <p>Price: ₹32,00,000</p>
+          <p>Kilometers: 52,000 km</p>
+          <button 
+            class="view-details-btn" 
+            data-index="1"
+            data-source="featured"
+          >View Details</button>
+        </div>
+        <div class="car-card">
+          <img src="images/Audi/I2.png" alt="Car Image" />
+          <h3>2021 Audi A4</h3>
+          <p>Price: ₹29,75,000</p>
+          <p>Kilometers: 30,000 km</p>
+          <button 
+            class="view-details-btn" 
+            data-index="2"
+            data-source="featured"
+          >View Details</button>
+        </div>
+        <div class="car-card">
+          <img src="images/Volvo/I2.png" alt="Car Image" />
+          <h3>2018 Volvo XC60</h3>
+          <p>Price: ₹26,50,000</p>
+          <p>Kilometers: 60,000 km</p>
+          <button 
+            class="view-details-btn" 
+            data-index="3"
+            data-source="featured"
+          >View Details</button>
+        </div>
+        <div class="car-card">
+          <img src="images/Skoda/I1.png" alt="Car Image" />
+          <h3>2020 Skoda Superb L&K</h3>
+          <p>Price: ₹22,00,000</p>
+          <p>Kilometers: 38,000 km</p>
+          <button 
+            class="view-details-btn" 
+            data-index="4"
+            data-source="featured"
+          >View Details</button>
+        </div>
+        <div class="car-card">
+          <img src="images/Toyota/F/I2.png" alt="Car Image" />
+          <h3>2017 Toyota Fortuner 4x4</h3>
+          <p>Price: ₹27,50,000</p>
+          <p>Kilometers: 70,000 km</p>
+          <button 
+            class="view-details-btn" 
+            data-index="5"
+            data-source="featured"
+          >View Details</button>
+        </div>
+        <div class="car-card">
+          <img src="images/honda/I1.png" alt="Car Image" />
+          <h3>2019 Honda CR-V AWD</h3>
+          <p>Price: ₹19,50,000</p>
+          <p>Kilometers: 48,000 km</p>
+          <button 
+            class="view-details-btn" 
+            data-index="6"
+            data-source="featured"
+          >View Details</button>
+        </div>
+        <div class="car-card">
+          <img src="images/Toyota/C/I2.png" alt="Car Image" />
+          <h3>2020 Toyota Camry</h3>
+          <p>Price: ₹25,50,000</p>
+          <p>Kilometers: 41,000 km</p>
+          <button 
+            class="view-details-btn" 
+            data-index="7"
+            data-source="featured"
+          >View Details</button>
+        </div>
+        <!-- Add remaining cards similarly -->
+      </div>
+    </section>
+  </main>
+
+  <!-- ✅ About Us Section -->
+  <section class="about-us" id="about">
+    <h2>About Us</h2>
+    <p>At <strong>AutoDeal</strong>, we bring you the finest collection of certified pre-owned vehicles. With years of experience, we ensure a smooth car buying and selling journey for every customer.</p>
+    <p>Trust, transparency, and top-tier service are the pillars of our success.</p>
+    <div class="stats">
+      <div class="stat-box">
+        <h3>250+</h3>
+        <p>Cars Sold</p>
+      </div>
+      <div class="stat-box">
+        <h3>8+ Years</h3>
+        <p>Experience</p>
+      </div>
+      <div class="stat-box">
+        <h3>98%</h3>
+        <p>Customer Satisfaction</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ✅ Contact Us Section -->
+  <section class="contact-us" id="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-container">
+      <form class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <div class="contact-info">
+        <h3>Reach Us At</h3>
+        <p><strong>📞 Phone:</strong> +91 93726 11023</p>
+        <p><strong>📧 Email:</strong> contact@autodeal.com</p>
+        <p><strong>📍 Location:</strong> Udupi, Karnataka, India</p>
+        <br>
+        <h3>Connect With Us</h3>
+        <div class="social-icons">
+          <a href="#"><img src="images/icons8-facebook-logo-48.png" alt="Facebook" /></a>
+          <a href="#"><img src="images/icons8-instagram-logo-48.png" alt="Instagram" /></a>
+          <a href="#"><img src="images/icons8-x-logo-50.png" alt="X" /></a>
+          <a href="#"><img src="images/icons8-youtube-logo-50.png" alt="YouTube" /></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ✅ Footer -->
+  <footer>
+    <p>&copy; 2025 AutoDeal. All rights reserved.</p>
+  </footer>
+
+  <!-- ✅ Login/Signup Modal -->
+  <div id="auth-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Login or Sign Up</h2>
+      <form id="auth-form">
+        <input type="text" placeholder="Username or Email" required>
+        <div class="password-wrapper">
+          <input type="password" placeholder="Password" id="login-password" required />
+          <span class="toggle-password" onclick="togglePassword('login-password')">👁️</span>
+        </div>
+        <button type="submit">Login</button>
+        <p class="toggle-link">Don't have an account? <a href="#" id="signup-toggle"> Sign Up</a></p>
+        <p class="form-feedback" id="login-feedback"></p>
+      </form>
+      <form id="signup-form" style="display: none;">
+        <input type="text" placeholder="Full Name" required>
+        <input type="tel" placeholder="Phone Number" pattern="[0-9]{10}" required>
+        <input type="text" placeholder="Username" required>
+        <input type="email" placeholder="Email" required>
+        <div class="password-wrapper">
+          <input type="password" placeholder="Password" id="signup-password" required />
+          <span class="toggle-password" onclick="togglePassword('signup-password')">👁️</span>
+        </div>
+        <button type="submit">Create Account</button>
+        <p class="toggle-link">Already have an account? <a href="#" id="login-toggle"> Login</a></p>
+        <p class="form-feedback" id="signup-feedback"></p>
+    </form>
+    </div>
+  </div>
+
+  <!-- ✅ Profile Modal -->
+  <div id="profile-modal" class="modal">
+    <div class="profile-modal">
+      <span class="close profile-close">&times;</span>
+      <h2>Profile</h2>
+      <div class="profile-details">
+        <p><strong>Username:</strong> <span id="profile-username">--</span></p>
+        <p><strong>Email:</strong> <span id="profile-email">--</span></p>
+      </div>
+      <div class="profile-actions">
+        <button class="btn">Edit Profile</button>
+        <button class="btn">Change Password</button>
+        <button class="btn logout">Log Out</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ✅ Sell Your Car Modal -->
+  <div id="sell-modal" class="modal">
+    <div class="modal-content sell-modal">
+      <span class="close sell-close" title="Close">&times;</span>
+      <h2>Sell Your Car</h2>
+      <form id="sell-form" enctype="multipart/form-data">
+        <div class="form-columns">
+          <div class="form-group">
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <input type="tel" placeholder="Phone Number" required />
+            <input type="text" placeholder="Car Make" required />
+            <input type="text" placeholder="Car Model" required />
+          </div>
+          <div class="form-group">
+            <input type="number" placeholder="Year" required />
+            <input type="number" placeholder="Price in ₹" required />
+            <input type="number" placeholder="Kilometers Driven" required />
+            <input type="text" placeholder="Registration Number" required />
+            <select required>
+              <option value="">Select Fuel Type</option>
+              <option value="Petrol">Petrol</option>
+              <option value="Diesel">Diesel</option>
+              <option value="CNG">CNG</option>
+              <option value="Electric">Electric</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Drop Area (full width) -->
+        <div class="drop-area" id="drop-area">
+          <p>📤 Drop your car images here or click to upload</p>
+          <input type="file" id="fileElem" accept="image/*" multiple required />
+        </div>
+
+        <button type="submit">Submit Car Details</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ✅ Browse Inventory Modal -->
+  <div id="browse-inventory-modal" class="modal">
+    <div class="modal-content inventory">
+      <span class="close-inventory">&times;</span>
+      <h2>Browse Inventory</h2>
+
+      <!-- ✅ Filter Form -->
+      <form id="filter-form">
+        <div class="filter-section">
+          <!-- Car Make -->
+          <div class="filter-group">
+            <label for="car-make">Car Make</label>
+            <input type="text" id="car-make" placeholder="e.g. Maruti, Hyundai" />
+          </div>
+
+          <!-- Car Model -->
+          <div class="filter-group">
+            <label for="car-model">Car Model</label>
+            <input type="text" id="car-model" placeholder="e.g. Swift, i20" />
+          </div>
+
+          <!-- Price Range -->
+          <div class="filter-group">
+            <label for="price-min">Min Price (₹)</label>
+            <input type="number" id="price-min" placeholder="e.g. 300000" />
+          </div>
+          <div class="filter-group">
+            <label for="price-max">Max Price (₹)</label>
+            <input type="number" id="price-max" placeholder="e.g. 700000" />
+          </div>
+
+          <!-- Year Range -->
+          <div class="filter-group">
+            <label for="year-min">Min Year</label>
+            <input type="number" id="year-min" placeholder="e.g. 2015" />
+          </div>
+          <div class="filter-group">
+            <label for="year-max">Max Year</label>
+            <input type="number" id="year-max" placeholder="e.g. 2023" />
+          </div>
+
+          <!-- Max KM Driven -->
+          <div class="filter-group">
+            <label for="km-max">Max KM Driven</label>
+            <input type="number" id="km-max" placeholder="e.g. 90000" />
+          </div>
+
+          <!-- Fuel Type -->
+          <div class="filter-group">
+            <label for="fuel-type">Fuel Type</label>
+            <select id="fuel-type">
+              <option value="">Any</option>
+              <option value="Petrol">Petrol</option>
+              <option value="Diesel">Diesel</option>
+              <option value="CNG">CNG</option>
+              <option value="Electric">Electric</option>
+            </select>
+          </div>
+
+          <!-- Buttons -->
+          <div class="filter-buttons">
+            <button type="submit" class="btn apply-btn">Apply Filters</button>
+            <button type="button" class="btn clear-btn" id="clear-filters">Clear Filters</button>
+          </div>
+        </div>
+      </form>
+
+      <!-- ✅ Available Cars Count -->
+      <div class="available-heading" id="available-count">
+        Available Cars: <span id="car-count">0</span>
+      </div>
+
+      <!-- ✅ Scrollable Car Listings -->
+      <div class="scroll-area">
+        <div class="cars" id="filtered-cars">
+          <!-- Car cards will be populated here -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ✅ View Details Modal -->
+  <div id="car-details-modal" class="modal">
+    <div class="modal-content car-details-modal">
+      <span class="close-details">&times;</span>
+      <h2>Car Details</h2>
+
+      <!-- Car Images -->
+      <div class="car-images">
+        <img src="images/MS.png" alt="Car Image" />
+        <img src="images/MS.png" alt="Car Image" />
+        <img src="images/MS.png" alt="Car Image" />
+        <img src="images/MS.png" alt="Car Image" />
+      </div>
+
+      <!-- Two Column Details -->
+      <div class="details-columns">
+        <!-- Car Info -->
+        <div class="car-info">
+          <h3>2018 Maruti Swift</h3>
+          <p><strong>Price:</strong> ₹4,50,000</p>
+          <p><strong>Year:</strong> 2018</p>
+          <p><strong>KM Driven:</strong> 45,000 km</p>
+          <p><strong>Fuel Type:</strong> Petrol</p>
+        </div>
+
+        <!-- Owner Info -->
+        <div class="owner-info">
+          <h3>Owner Details</h3>
+          <p><strong>Name:</strong> Adarsh Shetty</p>
+          <p><strong>Email:</strong> adarsh@example.com</p>
+          <p><strong>Phone:</strong> +91-9876543210</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ✅ Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
